@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Dream and Fortune Archive Icon</title>
+  <desc id="desc">Rounded square icon with moon and stars.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="60%" stop-color="#6B5B95" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <circle cx="198" cy="204" r="92" fill="#F5F3F0" opacity="0.95" />
+  <circle cx="238" cy="188" r="88" fill="#6B5B95" />
+  <g fill="#F5F3F0">
+    <path d="M338 136l12 28 28 12-28 12-12 28-12-28-28-12 28-12z" />
+    <path d="M392 222l8 19 19 8-19 8-8 19-8-19-19-8 19-8z" />
+    <path d="M314 308l16 38 38 16-38 16-16 38-16-38-38-16 38-16z" />
+  </g>
+  <text x="256" y="438" font-size="54" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif">D&amp;F</text>
+</svg>

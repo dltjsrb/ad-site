@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="돼지꿈, 뱀꿈, 시험꿈, 이빨 빠지는 꿈처럼 자주 찾는 꿈해몽과 오늘의 운세 안내를 한곳에 정리한 사이트입니다.">
+  <meta name="theme-color" content="#6B5B95">
+  <meta name="robots" content="index,follow">
+  <meta property="og:site_name" content="Dream & Fortune Archive">
+  <meta property="og:title" content="Dream & Fortune Archive | 꿈해몽과 오늘의 운세 아카이브">
+  <meta property="og:description" content="돼지꿈, 뱀꿈, 시험꿈, 이빨 빠지는 꿈처럼 자주 찾는 꿈해몽과 오늘의 운세 안내를 한곳에 정리한 사이트입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dreamfortunearchive.example/">
+  <meta property="og:image" content="https://dreamfortunearchive.example/assets/images/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dream & Fortune Archive | 꿈해몽과 오늘의 운세 아카이브">
+  <meta name="twitter:description" content="돼지꿈, 뱀꿈, 시험꿈, 이빨 빠지는 꿈처럼 자주 찾는 꿈해몽과 오늘의 운세 안내를 한곳에 정리한 사이트입니다.">
+  <meta name="twitter:image" content="https://dreamfortunearchive.example/assets/images/og-default.svg">
+  <link rel="canonical" href="https://dreamfortunearchive.example/">
+  <link rel="icon" href="assets/images/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+                              
+                              
+  <meta name="keywords" content="꿈해몽, 돼지꿈, 뱀꿈, 시험꿈, 이빨 빠지는 꿈, 오늘의 운세">
+  <meta name="author" content="Dream & Fortune Archive">
+          <title>Dream & Fortune Archive | 꿈해몽과 오늘의 운세 아카이브</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/commons.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .hero-section {
+      padding: 88px 0 72px;
+      background:
+        radial-gradient(circle at top right, rgba(212, 175, 55, 0.22), transparent 28%),
+        linear-gradient(135deg, rgba(107, 91, 149, 0.12) 0%, rgba(245, 243, 240, 0.98) 58%, rgba(212, 175, 55, 0.08) 100%);
+    }
+    .hero-grid,
+    .detail-grid,
+    .guide-grid,
+    .trust-grid,
+    .footer-grid {
+      display: grid;
+      gap: 24px;
+    }
+    .hero-grid {
+      grid-template-columns: 1.2fr 0.9fr;
+      align-items: center;
+    }
+    .hero-eyebrow,
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background-color: rgba(107, 91, 149, 0.12);
+      color: var(--color-primary);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .hero-title {
+      font-size: 44px;
+      line-height: 1.16;
+      margin-bottom: 18px;
+    }
+    .hero-summary {
+      font-size: 17px;
+      color: var(--color-gray-700);
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .hero-point,
+    .spotlight-card,
+    .guide-card,
+    .trust-card,
+    .search-panel {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--color-border);
+      border-radius: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-point {
+      padding: 16px;
+    }
+    .hero-point strong {
+      display: block;
+      font-size: 20px;
+      color: var(--color-primary);
+      margin-bottom: 6px;
+    }
+    .search-panel {
+      padding: 28px;
+    }
+    .search-panel h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    .search-box {
+      position: relative;
+      margin-bottom: 18px;
+    }
+    .search-button {
+      right: 10px;
+    }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .section-block {
+      padding: 72px 0;
+    }
+    .section-head {
+      max-width: 780px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+    .section-head h2 {
+      font-size: 34px;
+      margin: 0 0 12px;
+    }
+    .section-head p {
+      color: var(--color-gray-700);
+      margin-bottom: 0;
+    }
+    .detail-grid,
+    .guide-grid,
+    .trust-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .spotlight-card,
+    .guide-card,
+    .trust-card {
+      padding: 24px;
+      height: 100%;
+    }
+    .spotlight-card h3,
+    .guide-card h3,
+    .trust-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .card-kicker {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--color-secondary);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .card-list {
+      list-style: disc;
+      padding-left: 18px;
+      color: var(--color-gray-700);
+      margin-bottom: 0;
+    }
+    .card-list li + li {
+      margin-top: 8px;
+    }
+    .page-footer {
+      background-color: var(--color-dark-navy);
+      color: var(--color-light-text);
+      padding: 56px 0 28px;
+    }
+    .footer-grid {
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      margin-bottom: 22px;
+    }
+    .footer-grid h3 {
+      color: var(--color-secondary);
+      margin-top: 0;
+      font-size: 15px;
+    }
+    .footer-grid p,
+    .footer-grid li,
+    .footer-grid a {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 14px;
+    }
+    .footer-grid ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-grid li + li {
+      margin-top: 10px;
+    }
+    .footer-meta {
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.68);
+    }
+    .search-status,
+    .support-list,
+    .editorial-meta {
+      font-size: 14px;
+      color: var(--color-gray-700);
+    }
+    .support-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .editorial-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px 0 0;
+    }
+    .editorial-meta span {
+      background-color: rgba(107, 91, 149, 0.08);
+      border-radius: 999px;
+      padding: 6px 12px;
+    }
+    .disclaimer-card {
+      padding: 18px 20px;
+      background: #fffaf1;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 16px;
+      margin-top: 18px;
+    }
+    .mini-section {
+      margin-top: 18px;
+    }
+    .mini-section h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    .recent-panel {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--color-border);
+    }
+    @media (max-width: 1023px) {
+      .hero-grid,
+      .detail-grid,
+      .guide-grid,
+      .trust-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+      .hero-points {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 767px) {
+      .hero-section,
+      .section-block {
+        padding: 52px 0;
+      }
+      .hero-title {
+        font-size: 30px;
+      }
+      .section-head h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body class="page-wrapper">
+  <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+  <div class="visually-hidden" data-view-title="홈" data-view-url="/"></div>
+
+  <header>
+    <div class="header-container">
+      <a href="./" class="logo">
+        <span aria-hidden="true">D&amp;F</span>
+        <span class="logo-text">Dream &amp; Fortune Archive</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./">홈</a></li>
+          <li class="nav-item"><a href="dream/">꿈해몽</a></li>
+          <li class="nav-item"><a href="fortune/today/">오늘의 운세</a></li>
+          <li class="nav-item"><a href="about/">사이트 소개</a></li>
+          <li class="nav-item"><a href="contact/">문의</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="메뉴 열기 또는 닫기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section">
+      <div class="container-lg hero-grid">
+        <div>
+          <span class="hero-eyebrow">Dream and Fortune Archive</span>
+          <h1 class="hero-title">자주 찾는 꿈해몽과 운세 안내를 읽기 쉽게 정리한 아카이브입니다</h1>
+          <p class="hero-summary">돼지꿈, 뱀꿈, 시험꿈, 이빨 빠지는 꿈처럼 검색량이 높은 주제를 먼저 정리하고, 해석을 볼 때 주의할 점과 함께 읽으면 좋은 안내 페이지까지 연결했습니다.</p>
+          <div class="editorial-meta" aria-label="콘텐츠 기준">
+            <span>편집 기준 공개</span>
+            <span>참고용 해석 중심</span>
+            <span>최종 점검일 2026-04-21</span>
+          </div>
+          <div class="hero-actions">
+            <a href="dream/" class="btn btn-primary">꿈해몽 전체 보기</a>
+            <a href="guide/dream-interpretation/" class="btn btn-secondary">해몽 가이드 읽기</a>
+          </div>
+          <div class="hero-points">
+            <div class="hero-point"><strong>핵심 정리</strong><span>주제별로 자주 나오는 해석 포인트를 먼저 보여줍니다.</span></div>
+            <div class="hero-point"><strong>탐색 구조</strong><span>메인에서 상세 글과 운세 안내로 자연스럽게 이동할 수 있습니다.</span></div>
+            <div class="hero-point"><strong>신뢰 요소</strong><span>문의, 소개, 정책 페이지를 함께 제공해 사이트 목적을 분명히 합니다.</span></div>
+          </div>
+        </div>
+        <aside class="search-panel" aria-label="빠른 검색">
+          <h2>가장 많이 찾는 주제를 바로 찾아보세요</h2>
+          <p class="text-muted">정확한 제목을 몰라도 비슷한 표현을 찾아 가장 가까운 상세 페이지나 아카이브 결과로 안내합니다.</p>
+          <div class="search-box" data-search-scope="site">
+            <input type="text" class="search-input" placeholder="예: 돼지꿈, 뱀꿈, 시험꿈, 운세" aria-label="꿈해몽 검색">
+            <button class="search-button" aria-label="검색">검색</button>
+          </div>
+          <p class="search-status mb-0" data-search-status aria-live="polite">검색어를 입력하면 가장 관련성 높은 결과를 안내합니다.</p>
+          <div class="quick-links">
+            <a href="dream/pig/" class="tag">#돼지꿈</a>
+            <a href="dream/snake/" class="tag">#뱀꿈</a>
+            <a href="dream/exam/" class="tag">#시험꿈</a>
+            <a href="dream/teeth-falling/" class="tag">#이빨빠지는꿈</a>
+            <a href="fortune/today/" class="tag">#오늘의운세</a>
+          </div>
+          <div class="mini-section">
+            <h3>최근 검색</h3>
+            <div class="quick-links" data-recent-searches></div>
+          </div>
+          <div class="mini-section">
+            <h3>최근 본 글</h3>
+            <div class="quick-links" data-recent-views></div>
+          </div>
+          <ul class="card-list" style="margin-top:18px;">
+            <li>검색량이 높은 주제를 먼저 정리한 구조입니다.</li>
+            <li>짧은 요약보다 실제로 읽히는 설명형 콘텐츠를 중심으로 구성했습니다.</li>
+            <li>광고보다 콘텐츠 탐색 흐름이 먼저 보이도록 설계했습니다.</li>
+          </ul>
+          <div class="disclaimer-card">
+            꿈해몽과 운세 콘텐츠는 참고용 읽을거리입니다. 건강, 재정, 관계에 대한 실제 결정은 검증 가능한 정보와 현재 상황을 기준으로 판단해 주세요.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container-lg">
+        <div class="section-head">
+          <span class="section-eyebrow">Popular Details</span>
+          <h2>바로 읽을 수 있는 대표 꿈해몽</h2>
+          <p>사용자가 가장 많이 찾는 꿈 주제를 먼저 배치해, 핵심 해석을 빠르게 확인할 수 있도록 구성했습니다.</p>
+        </div>
+        <div class="detail-grid">
+          <article class="spotlight-card">
+            <span class="card-kicker">Dream Detail</span>
+            <h3>돼지꿈 해몽</h3>
+            <p>재물운으로만 단순하게 보지 않고, 돼지의 상태와 꿈속 분위기에 따라 기회, 부담, 기대를 나눠 읽을 수 있도록 정리했습니다.</p>
+            <ul class="card-list">
+              <li>큰 돼지, 새끼 돼지, 집으로 들어오는 돼지의 차이</li>
+              <li>재물 기대와 현실 부담이 함께 보이는 장면 구분</li>
+              <li>반복해서 꾼 경우 점검해 볼 심리 포인트</li>
+            </ul>
+            <p class="mb-0 mt-3"><a href="dream/pig/" class="btn btn-secondary">자세히 읽기</a></p>
+          </article>
+          <article class="spotlight-card">
+            <span class="card-kicker">Dream Detail</span>
+            <h3>뱀꿈 해몽</h3>
+            <p>변화와 긴장, 직감이 함께 섞이는 꿈이라서 좋고 나쁨으로만 나누지 않고, 꿈속 상황별로 해석의 방향을 정리했습니다.</p>
+            <ul class="card-list">
+              <li>따라오는 뱀과 물리는 뱀의 의미 차이</li>
+              <li>색깔과 움직임에 따라 달라지는 인상 해석</li>
+              <li>불안이 큰 시기에 자주 반복되는 이유</li>
+            </ul>
+            <p class="mb-0 mt-3"><a href="dream/snake/" class="btn btn-secondary">자세히 읽기</a></p>
+          </article>
+          <article class="spotlight-card">
+            <span class="card-kicker">Dream Detail</span>
+            <h3>시험꿈 해몽</h3>
+            <p>시험의 합격 여부보다 준비 상태와 평가 불안이 반영되는 경우가 많아서, 학생과 직장인 모두에게 적용되는 기준으로 정리했습니다.</p>
+            <ul class="card-list">
+              <li>늦는 꿈, 못 푸는 꿈, 준비가 안 된 꿈의 차이</li>
+              <li>일정 압박과 자기 평가가 반영되는 방식</li>
+              <li>발표나 면접 전후에 자주 나오는 이유</li>
+            </ul>
+            <p class="mb-0 mt-3"><a href="dream/exam/" class="btn btn-secondary">자세히 읽기</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" style="background-color: var(--color-gray-100);">
+      <div class="container-lg">
+        <div class="section-head">
+          <span class="section-eyebrow">Quick Access</span>
+          <h2>자주 함께 보는 페이지</h2>
+          <p>상세 글만 보지 않고, 꿈을 읽는 방법과 오늘의 운세 안내까지 함께 탐색할 수 있도록 연결해 두었습니다.</p>
+        </div>
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h3>이빨 빠지는 꿈</h3>
+            <p>불안과 상실감, 변화에 대한 긴장이 강하게 반영되는 대표 주제입니다. 과장된 속설보다 현재 심리 상태와 연결해 읽는 방향을 제안합니다.</p>
+            <p class="mb-0 mt-3"><a href="dream/teeth-falling/" class="btn btn-secondary">상세 글 보기</a></p>
+          </div>
+          <div class="guide-card">
+            <h3>꿈해몽 가이드</h3>
+            <p>꿈을 해석할 때 무엇을 먼저 봐야 하는지, 상황과 감정을 어떻게 연결해야 하는지 기초 기준을 설명합니다.</p>
+            <p class="mb-0 mt-3"><a href="guide/dream-interpretation/" class="btn btn-secondary">가이드 읽기</a></p>
+          </div>
+          <div class="guide-card">
+            <h3>오늘의 운세 안내</h3>
+            <p>운세 콘텐츠를 참고용으로 읽는 방법과 별자리, 일반 운세를 받아들이는 기준을 간단히 정리했습니다.</p>
+            <p class="mb-0 mt-3"><a href="fortune/today/" class="btn btn-secondary">운세 보기</a></p>
+          </div>
+        </div>
+        <div class="support-list" aria-label="추가 탐색 링크">
+          <a href="dream/water/" class="tag">물꿈</a>
+          <a href="dream/flying/" class="tag">나는 꿈</a>
+          <a href="dream/death/" class="tag">죽는 꿈</a>
+          <a href="dream/pregnancy/" class="tag">임신꿈</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container-lg">
+        <div class="section-head">
+          <span class="section-eyebrow">Site Trust</span>
+          <h2>사이트 신뢰를 위해 함께 둔 기본 정보</h2>
+          <p>콘텐츠만 있는 단일 페이지가 아니라, 목적과 운영 정보를 함께 보여주는 구조로 사이트의 성격을 분명히 했습니다.</p>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>콘텐츠 중심 구조</h3>
+            <p>메인, 상세 글, 가이드, 정책 페이지를 분리해 사용자가 현재 어디를 보고 있는지 이해하기 쉬운 구조로 만들었습니다.</p>
+          </div>
+          <div class="trust-card">
+            <h3>문의와 정책</h3>
+            <p>문의, 개인정보처리방침, 이용약관 페이지를 연결해 운영 주체와 기본 원칙을 확인할 수 있게 했습니다.</p>
+          </div>
+          <div class="trust-card">
+            <h3>편집 기준 공개</h3>
+            <p>해몽과 운세를 단정적으로 소비하지 않도록 사이트 소개 페이지에서 콘텐츠 원칙과 참고 기준을 함께 안내합니다.</p>
+          </div>
+          <div class="trust-card">
+            <h3>탐색 흐름</h3>
+            <p>검색과 빠른 링크를 통해 사용자가 원하는 상세 페이지에 무리 없이 도달하도록 설계했습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container-lg">
+      <div class="footer-grid">
+        <section>
+          <h3>사이트 소개</h3>
+          <p>Dream &amp; Fortune Archive는 자주 찾는 꿈해몽과 운세 콘텐츠를 읽기 쉬운 구조로 정리하는 정보형 사이트입니다.</p>
+        </section>
+        <section>
+          <h3>꿈해몽</h3>
+          <ul>
+            <li><a href="dream/">꿈해몽 아카이브</a></li>
+            <li><a href="dream/pig/">돼지꿈</a></li>
+            <li><a href="dream/snake/">뱀꿈</a></li>
+            <li><a href="dream/exam/">시험꿈</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>정책</h3>
+          <ul>
+            <li><a href="privacy/">개인정보처리방침</a></li>
+            <li><a href="terms/">이용약관</a></li>
+            <li><a href="contact/">문의</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; <span data-current-year>2024</span> Dream &amp; Fortune Archive</span>
+        <span>꿈해몽과 운세 정보는 참고용 안내이며, 중요한 판단은 현재 상황과 신뢰할 수 있는 실제 정보에 기반해 결정해 주세요.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site-data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

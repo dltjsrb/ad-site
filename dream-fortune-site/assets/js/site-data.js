@@ -1,0 +1,152 @@
+window.DREAM_FORTUNE_SITE = {
+  siteName: "Dream & Fortune Archive",
+  siteUrl: "https://dreamfortunearchive.example",
+  locale: "ko_KR",
+  defaultOgImage: "/assets/images/og-default.svg",
+  contentItems: [
+    {
+      id: "pig",
+      title: "돼지꿈",
+      fullTitle: "돼지꿈 해몽",
+      path: "/dream/pig/",
+      section: "dream",
+      group: "Dream",
+      badge: "인기 주제",
+      summary: "재물, 기회, 기대감과 관련해 자주 연결되는 대표 주제입니다.",
+      description: "돼지꿈 해몽을 상황별로 정리했습니다. 큰 돼지, 새끼 돼지, 집으로 들어오는 돼지꿈까지 함께 살펴보세요.",
+      keywords: ["돼지꿈", "돼지", "재물꿈", "큰돼지", "새끼돼지", "돼지가집에들어오는꿈"]
+    },
+    {
+      id: "snake",
+      title: "뱀꿈",
+      fullTitle: "뱀꿈 해몽",
+      path: "/dream/snake/",
+      section: "dream",
+      group: "Dream",
+      badge: "인기 주제",
+      summary: "변화, 경계심, 직감이 함께 드러나는 대표 꿈입니다.",
+      description: "뱀꿈 해몽을 상황별로 정리했습니다. 따라오는 뱀, 물리는 뱀, 색깔별 인상까지 함께 살펴보세요.",
+      keywords: ["뱀꿈", "뱀", "뱀에물리는꿈", "큰뱀", "흰뱀", "검은뱀"]
+    },
+    {
+      id: "exam",
+      title: "시험꿈",
+      fullTitle: "시험꿈 해몽",
+      path: "/dream/exam/",
+      section: "dream",
+      group: "Dream",
+      badge: "불안/평가",
+      summary: "평가 불안, 준비 상태, 일정 압박이 반영되는 경우가 많습니다.",
+      description: "시험꿈 해몽을 정리했습니다. 늦는 꿈, 못 푸는 꿈, 준비가 안 된 꿈까지 함께 살펴보세요.",
+      keywords: ["시험꿈", "시험", "면접", "발표", "시험에늦는꿈", "문제를못푸는꿈"]
+    },
+    {
+      id: "teeth-falling",
+      title: "이빨 빠지는 꿈",
+      fullTitle: "이빨 빠지는 꿈 해몽",
+      path: "/dream/teeth-falling/",
+      section: "dream",
+      group: "Dream",
+      badge: "불안/변화",
+      summary: "불안감과 상실감, 변화에 대한 긴장을 보여주는 대표적인 주제입니다.",
+      description: "이빨 빠지는 꿈 해몽을 정리했습니다. 불안과 상실감, 변화에 대한 긴장을 중심으로 읽어보세요.",
+      keywords: ["이빨빠지는꿈", "이빨", "치아", "치아꿈", "이가빠지는꿈"]
+    },
+    {
+      id: "water",
+      title: "물꿈",
+      fullTitle: "물꿈 해몽",
+      path: "/dream/water/",
+      section: "dream",
+      group: "Dream",
+      badge: "감정 흐름",
+      summary: "감정 상태와 컨디션 변화를 읽을 때 자주 등장하는 주제입니다.",
+      description: "물꿈 해몽을 정리했습니다. 맑은 물, 홍수, 물에 빠지는 꿈의 차이를 함께 살펴보세요.",
+      keywords: ["물꿈", "맑은물꿈", "홍수꿈", "물에빠지는꿈", "바다꿈", "강물꿈"]
+    },
+    {
+      id: "flying",
+      title: "나는 꿈",
+      fullTitle: "나는 꿈 해몽",
+      path: "/dream/flying/",
+      section: "dream",
+      group: "Dream",
+      badge: "자유/압박",
+      summary: "자유로움, 도피 욕구, 성취 욕구가 함께 들어 있는 경우가 많습니다.",
+      description: "나는 꿈 해몽을 정리했습니다. 하늘을 나는 꿈, 불안하게 뜨는 꿈의 차이를 살펴보세요.",
+      keywords: ["나는꿈", "하늘을나는꿈", "비행꿈", "날아가는꿈"]
+    },
+    {
+      id: "death",
+      title: "죽는 꿈",
+      fullTitle: "죽는 꿈 해몽",
+      path: "/dream/death/",
+      section: "dream",
+      group: "Dream",
+      badge: "전환/마무리",
+      summary: "끝과 단절의 공포로 느껴지기 쉽지만 변화와 정리의 상징이 되기도 합니다.",
+      description: "죽는 꿈 해몽을 정리했습니다. 내가 죽는 꿈, 가족이 죽는 꿈을 변화와 전환의 관점에서 살펴보세요.",
+      keywords: ["죽는꿈", "사망꿈", "가족이죽는꿈", "내가죽는꿈"]
+    },
+    {
+      id: "pregnancy",
+      title: "임신꿈",
+      fullTitle: "임신꿈 해몽",
+      path: "/dream/pregnancy/",
+      section: "dream",
+      group: "Dream",
+      badge: "시작/성장",
+      summary: "새로운 계획, 가능성, 책임감이 함께 떠오를 때 자주 보입니다.",
+      description: "임신꿈 해몽을 정리했습니다. 새로운 시작, 가능성, 책임감과 연결해 읽어보세요.",
+      keywords: ["임신꿈", "임신하는꿈", "아기꿈", "출산꿈", "태몽"]
+    },
+    {
+      id: "fortune-today",
+      title: "오늘의 운세 안내",
+      fullTitle: "오늘의 운세 안내",
+      path: "/fortune/today/",
+      section: "fortune",
+      group: "Fortune",
+      badge: "운세",
+      summary: "운세를 참고용으로 읽는 방법과 기준을 정리한 페이지입니다.",
+      description: "오늘의 운세를 참고용으로 읽는 방법과 별자리, 일반 운세를 받아들이는 기준을 정리한 페이지입니다.",
+      keywords: ["오늘의운세", "운세", "사주", "별자리", "별자리운세"]
+    },
+    {
+      id: "guide",
+      title: "꿈해몽 가이드",
+      fullTitle: "꿈해몽 가이드",
+      path: "/guide/dream-interpretation/",
+      section: "guide",
+      group: "Guide",
+      badge: "가이드",
+      summary: "꿈을 읽을 때 무엇을 먼저 봐야 하는지 정리한 기본 가이드입니다.",
+      description: "꿈해몽을 읽는 기본 순서와 자주 등장하는 해석 포인트를 정리한 가이드입니다.",
+      keywords: ["꿈해몽", "해몽", "가이드", "꿈뜻", "꿈해석"]
+    },
+    {
+      id: "about",
+      title: "사이트 소개",
+      fullTitle: "사이트 소개",
+      path: "/about/",
+      section: "about",
+      group: "About",
+      badge: "운영 정책",
+      summary: "운영 목적과 콘텐츠 원칙을 안내하는 페이지입니다.",
+      description: "Dream & Fortune Archive의 운영 목적과 콘텐츠 원칙을 소개합니다.",
+      keywords: ["소개", "사이트소개", "about", "운영정책", "콘텐츠원칙"]
+    },
+    {
+      id: "contact",
+      title: "문의",
+      fullTitle: "문의",
+      path: "/contact/",
+      section: "contact",
+      group: "Support",
+      badge: "지원",
+      summary: "콘텐츠 오류 제보와 운영 문의를 위한 안내 페이지입니다.",
+      description: "Dream & Fortune Archive 문의 안내 페이지입니다.",
+      keywords: ["문의", "연락", "이메일", "제보"]
+    }
+  ]
+};

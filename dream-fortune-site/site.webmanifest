@@ -1,0 +1,16 @@
+{
+  "name": "Dream & Fortune Archive",
+  "short_name": "DreamFortune",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3F0",
+  "theme_color": "#6B5B95",
+  "icons": [
+    {
+      "src": "/assets/images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="자주 찾는 꿈해몽 상세 글을 모아둔 아카이브 페이지입니다.">
+  <meta name="theme-color" content="#6B5B95">
+  <meta name="robots" content="index,follow">
+  <meta property="og:site_name" content="Dream & Fortune Archive">
+  <meta property="og:title" content="꿈해몽 아카이브 | Dream & Fortune Archive">
+  <meta property="og:description" content="자주 찾는 꿈해몽 상세 글을 모아둔 아카이브 페이지입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dreamfortunearchive.example/dream/">
+  <meta property="og:image" content="https://dreamfortunearchive.example/assets/images/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="꿈해몽 아카이브 | Dream & Fortune Archive">
+  <meta name="twitter:description" content="자주 찾는 꿈해몽 상세 글을 모아둔 아카이브 페이지입니다.">
+  <meta name="twitter:image" content="https://dreamfortunearchive.example/assets/images/og-default.svg">
+  <link rel="canonical" href="https://dreamfortunearchive.example/dream/">
+  <link rel="icon" href="../assets/images/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="../site.webmanifest">
+
+                              
+                              
+  <title>꿈해몽 아카이브 | Dream & Fortune Archive</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/commons.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <style>
+    .archive-toolbar {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .archive-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--color-gray-700);
+    }
+    .archive-meta span {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background-color: rgba(107, 91, 149, 0.08);
+    }
+    .archive-panels {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .archive-panel {
+      background-color: var(--color-light-text);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .archive-panel h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .quick-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .results-count {
+      font-size: 14px;
+      color: var(--color-gray-700);
+      margin: 8px 0 0;
+    }
+    .empty-results[hidden] {
+      display: none;
+    }
+    .empty-results {
+      margin-top: 24px;
+    }
+    .card[data-search-card][hidden] {
+      display: none;
+    }
+    .card-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: var(--color-gray-700);
+    }
+    .card-meta span {
+      background-color: var(--color-gray-100);
+      border-radius: 999px;
+      padding: 4px 10px;
+    }
+    @media (max-width: 900px) {
+      .archive-panels {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="page-wrapper">
+  <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+  <div class="visually-hidden" data-view-title="꿈해몽 아카이브" data-view-url="/dream/"></div>
+  <header>
+    <div class="header-container">
+      <a href="../" class="logo"><span aria-hidden="true">D&amp;F</span><span class="logo-text">Dream &amp; Fortune Archive</span></a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../">홈</a></li>
+          <li class="nav-item"><a href="./">꿈해몽</a></li>
+          <li class="nav-item"><a href="../fortune/today/">오늘의 운세</a></li>
+          <li class="nav-item"><a href="../about/">사이트 소개</a></li>
+          <li class="nav-item"><a href="../contact/">문의</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="메뉴 열기 또는 닫기" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="main-content" data-archive-search>
+    <section class="page-title-section">
+      <div class="page-title">
+        <h1>꿈해몽 아카이브</h1>
+        <p class="page-title-subtitle">많이 찾는 꿈 주제를 모아두고, 상세 해석 페이지로 이어지도록 정리했습니다.</p>
+        <div class="archive-meta" aria-label="아카이브 정보">
+          <span>상세 페이지 <span data-dream-count>0</span>개</span>
+          <span>최근 검토일 2026-04-21</span>
+          <span>참고용 해석 중심</span>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-lg">
+        <div class="archive-toolbar">
+          <div class="search-box" data-search-scope="archive">
+            <input type="text" class="search-input" data-archive-input placeholder="예: 맑은 물 꿈, 임신꿈, 죽는 꿈" aria-label="아카이브 검색">
+            <button class="search-button" aria-label="검색">검색</button>
+          </div>
+          <p class="results-count" data-results-count aria-live="polite">전체 꿈해몽 주제를 둘러보는 중입니다.</p>
+        </div>
+
+        <div class="archive-panels">
+          <section class="archive-panel">
+            <h2>자주 찾는 검색어</h2>
+            <div class="quick-tags">
+              <a href="../dream/?q=돼지꿈" class="tag">돼지꿈</a>
+              <a href="../dream/?q=뱀꿈" class="tag">뱀꿈</a>
+              <a href="../dream/?q=시험꿈" class="tag">시험꿈</a>
+              <a href="../dream/?q=이빨 빠지는 꿈" class="tag">이빨 빠지는 꿈</a>
+              <a href="../dream/?q=물꿈" class="tag">물꿈</a>
+              <a href="../dream/?q=임신꿈" class="tag">임신꿈</a>
+            </div>
+          </section>
+          <section class="archive-panel">
+            <h2>최근 본 글</h2>
+            <div class="quick-tags" data-recent-views></div>
+          </section>
+        </div>
+
+        <div class="grid grid-auto" data-archive-grid></div>
+        <noscript>
+          <div class="notice warning">
+            자바스크립트가 꺼져 있어 자동 목록이 보이지 않습니다. 아래 대표 페이지로 이동해 주세요:
+            <a href="./pig/">돼지꿈</a>,
+            <a href="./snake/">뱀꿈</a>,
+            <a href="./exam/">시험꿈</a>,
+            <a href="./teeth-falling/">이빨 빠지는 꿈</a>,
+            <a href="./water/">물꿈</a>,
+            <a href="./pregnancy/">임신꿈</a>
+          </div>
+        </noscript>
+
+        <div class="notice warning empty-results" data-empty-results hidden>
+          검색과 정확히 맞는 주제를 찾지 못했습니다. 비슷한 표현으로 다시 검색하거나 위의 인기 검색어를 눌러 탐색해 보세요.
+        </div>
+        <div class="notice info mt-4">꿈해몽은 참고용 해석입니다. 의미를 단정하기보다 현재의 감정과 상황을 함께 살피는 방향으로 읽는 것이 좋습니다.</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; <span data-current-year>2024</span> Dream &amp; Fortune Archive</div>
+        <div class="footer-links">
+          <a href="../privacy/">개인정보처리방침</a>
+          <a href="../terms/">이용약관</a>
+          <a href="../contact/">문의</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/components.js"></script>
+</body>
+</html>

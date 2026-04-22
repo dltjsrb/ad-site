@@ -1,0 +1,519 @@
+/* ===================================
+   Responsive Design
+   모바일 우선 (Mobile-First) 접근
+   =================================== */
+
+/* ===================================
+   768px 이상: 태블릿
+   =================================== */
+
+@media (min-width: 768px) {
+  /* Typography adjustments */
+  h1 {
+    font-size: var(--font-h1);
+  }
+
+  h2 {
+    font-size: var(--font-h2);
+  }
+
+  h3 {
+    font-size: var(--font-h3);
+  }
+
+  body {
+    font-size: var(--font-body);
+  }
+
+  .page-title h1 {
+    font-size: 36px;
+  }
+
+  /* Header adjustments */
+  .header-container {
+    padding: 0 24px;
+  }
+
+  .logo-text {
+    display: inline;
+    margin-left: 8px;
+  }
+
+  /* Navigation */
+  nav.main-nav {
+    margin-left: 40px;
+  }
+
+  /* Container padding */
+  .container-lg,
+  .container-md,
+  .container-sm {
+    padding: 0 24px;
+  }
+
+  /* Grid adjustments */
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Sidebar layout */
+  .content-with-sidebar {
+    grid-template-columns: 1fr 280px;
+    gap: 32px;
+  }
+
+  /* Cards */
+  .card {
+    padding: 24px;
+  }
+
+  .card-image {
+    height: 220px;
+    margin: -24px -24px 16px -24px;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 14px 28px;
+  }
+
+  .btn-lg {
+    padding: 18px 36px;
+  }
+
+  /* Section spacing */
+  .section {
+    padding: 80px 0;
+  }
+
+  .page-title-section {
+    padding: 80px 0;
+  }
+
+  /* Footer layout */
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    padding: 20px 0;
+  }
+
+  /* Pagination */
+  .pagination {
+    gap: 12px;
+    margin: 50px 0;
+  }
+
+  .pagination-item a,
+  .pagination-item button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+/* ===================================
+   1024px 이상: 데스크톱
+   =================================== */
+
+@media (min-width: 1024px) {
+  /* Header */
+  .header-container {
+    padding: 0 32px;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
+
+  nav.main-nav {
+    display: flex !important;
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    margin-left: auto;
+  }
+
+  .nav-list {
+    margin-left: 0 !important;
+  }
+
+  /* Container padding */
+  .container-lg,
+  .container-md,
+  .container-sm {
+    padding: 0 32px;
+  }
+
+  /* Grid */
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* Sidebar layout */
+  .content-with-sidebar {
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+  }
+
+  /* Section spacing */
+  .section {
+    padding: 100px 0;
+  }
+
+  .page-title-section {
+    padding: 100px 0;
+    margin-bottom: 60px;
+  }
+
+  /* Footer layout */
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
+}
+
+/* ===================================
+   1200px 이상: 큰 화면
+   =================================== */
+
+@media (min-width: 1200px) {
+  .container-lg {
+    max-width: 1200px;
+  }
+
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* ===================================
+   사소한 화면 (320px 이하)
+   =================================== */
+
+@media (max-width: 320px) {
+  .container-lg,
+  .container-md,
+  .container-sm {
+    padding: 0 12px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+/* ===================================
+   모바일 전용 스타일 (767px 이하)
+   =================================== */
+
+@media (max-width: 767px) {
+  /* 모바일 헤더 */
+  .header-container {
+    height: 60px;
+    padding: 0 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  /* 모바일 메뉴 열기 */
+  .hamburger {
+    display: flex;
+  }
+
+  /* 모바일 네비게이션 (숨김 상태) */
+  nav.main-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-light-text);
+    flex-direction: column;
+    padding: 20px;
+    gap: 0;
+    z-index: 99;
+    box-shadow: var(--shadow-md);
+  }
+
+  nav.main-nav.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item a {
+    display: block;
+    padding: 8px 0;
+    border: none;
+  }
+
+  /* 모바일 타이포그래피 */
+  h1 {
+    font-size: var(--font-h1-mobile);
+  }
+
+  h2 {
+    font-size: var(--font-h2-mobile);
+  }
+
+  h3 {
+    font-size: var(--font-h3-mobile);
+  }
+
+  body {
+    font-size: var(--font-body-mobile);
+  }
+
+  .page-title h1 {
+    font-size: 24px;
+  }
+
+  .page-title-subtitle {
+    font-size: 14px;
+  }
+
+  /* 모바일 컨테이너 */
+  .container-lg,
+  .container-md,
+  .container-sm {
+    padding: 0 16px;
+  }
+
+  /* 모바일 그리드 */
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-auto {
+    grid-template-columns: 1fr;
+  }
+
+  /* 모바일 사이드바 */
+  .content-with-sidebar {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sidebar {
+    grid-column: 1;
+  }
+
+  /* 모바일 버튼 */
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .btn-sm {
+    width: auto;
+  }
+
+  /* 모바일 카드 */
+  .card {
+    padding: 16px;
+  }
+
+  .card-image {
+    height: 160px;
+    margin: -16px -16px 12px -16px;
+  }
+
+  .card-compact {
+    padding: 12px;
+  }
+
+  /* 모바일 섹션 간격 */
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-small {
+    padding: 24px 0;
+  }
+
+  .page-title-section {
+    padding: 40px 0;
+    margin-bottom: 24px;
+  }
+
+  .pb-60,
+  .pt-60,
+  .pv-60 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* 모바일 폼 */
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-input,
+  .form-textarea,
+  .form-select {
+    font-size: 16px; /* iOS 줌 방지 */
+    padding: 12px;
+  }
+
+  /* 모바일 푸터 */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-section h3 {
+    font-size: 13px;
+  }
+
+  /* 모바일 탭 */
+  .tabs-link {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* 모바일 배경 그라데이션 조정 */
+  .page-title-section {
+    background: linear-gradient(135deg, rgba(107, 91, 149, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
+  }
+
+  /* 모바일 헤더 박스 */
+  .breadcrumb {
+    padding: 12px 0;
+  }
+
+  .breadcrumb-list {
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  /* 모바일 애니메이션 줄이기 (성능) */
+  * {
+    animation-duration: 0.15s !important;
+    transition-duration: 0.15s !important;
+  }
+
+  /* 모바일에서 hover 효과 제거 (터치 기반) */
+  @media (hover: none) {
+    .card:hover {
+      transform: none;
+    }
+
+    .btn:hover {
+      transform: none;
+    }
+
+    .tag:hover {
+      background-color: var(--color-background);
+      color: var(--color-primary);
+    }
+  }
+}
+
+/* ===================================
+   프린트 스타일
+   =================================== */
+
+@media print {
+  header,
+  footer,
+  .breadcrumb,
+  .sidebar,
+  .btn,
+  .pagination {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+  }
+
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+/* ===================================
+   접근성 - 모션 감지
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===================================
+   다크 모드 (선택사항)
+   =================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* 추후 다크 모드 스타일 추가 가능 */
+}
